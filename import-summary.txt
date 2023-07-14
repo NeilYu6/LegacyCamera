@@ -1,0 +1,132 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* Android.bp
+* CleanSpec.mk
+* OWNERS
+* jni\
+* jni\Android.bp
+* jni\feature_mos\
+* jni\feature_mos\doc\
+* jni\feature_mos\doc\Readme.txt
+* jni\feature_mos\doc\feature_mos_API_doxyfile
+* jni\feature_mos\src\
+* jni\feature_mos\src\mosaic\
+* jni\feature_mos\src\mosaic\AlignFeatures.cpp
+* jni\feature_mos\src\mosaic\AlignFeatures.h
+* jni\feature_mos\src\mosaic\Blend.cpp
+* jni\feature_mos\src\mosaic\Blend.h
+* jni\feature_mos\src\mosaic\CSite.h
+* jni\feature_mos\src\mosaic\Delaunay.cpp
+* jni\feature_mos\src\mosaic\Delaunay.h
+* jni\feature_mos\src\mosaic\EdgePointerUtil.h
+* jni\feature_mos\src\mosaic\Geometry.h
+* jni\feature_mos\src\mosaic\ImageUtils.cpp
+* jni\feature_mos\src\mosaic\ImageUtils.h
+* jni\feature_mos\src\mosaic\Interp.h
+* jni\feature_mos\src\mosaic\Log.h
+* jni\feature_mos\src\mosaic\MatrixUtils.h
+* jni\feature_mos\src\mosaic\Mosaic.cpp
+* jni\feature_mos\src\mosaic\Mosaic.h
+* jni\feature_mos\src\mosaic\MosaicTypes.h
+* jni\feature_mos\src\mosaic\Pyramid.cpp
+* jni\feature_mos\src\mosaic\Pyramid.h
+* jni\feature_mos\src\mosaic\trsMatrix.cpp
+* jni\feature_mos\src\mosaic\trsMatrix.h
+* jni\feature_mos\src\mosaic_renderer\
+* jni\feature_mos\src\mosaic_renderer\FrameBuffer.cpp
+* jni\feature_mos\src\mosaic_renderer\FrameBuffer.h
+* jni\feature_mos\src\mosaic_renderer\Renderer.cpp
+* jni\feature_mos\src\mosaic_renderer\Renderer.h
+* jni\feature_mos\src\mosaic_renderer\SurfaceTextureRenderer.cpp
+* jni\feature_mos\src\mosaic_renderer\SurfaceTextureRenderer.h
+* jni\feature_mos\src\mosaic_renderer\WarpRenderer.cpp
+* jni\feature_mos\src\mosaic_renderer\WarpRenderer.h
+* jni\feature_mos\src\mosaic_renderer\YVURenderer.cpp
+* jni\feature_mos\src\mosaic_renderer\YVURenderer.h
+* jni\feature_mos_jni.cpp
+* jni\feature_stab\
+* jni\feature_stab\db_vlvm\
+* jni\feature_stab\db_vlvm\db_bundle.h
+* jni\feature_stab\db_vlvm\db_feature_detection.cpp
+* jni\feature_stab\db_vlvm\db_feature_detection.h
+* jni\feature_stab\db_vlvm\db_feature_matching.cpp
+* jni\feature_stab\db_vlvm\db_feature_matching.h
+* jni\feature_stab\db_vlvm\db_framestitching.cpp
+* jni\feature_stab\db_vlvm\db_framestitching.h
+* jni\feature_stab\db_vlvm\db_image_homography.cpp
+* jni\feature_stab\db_vlvm\db_image_homography.h
+* jni\feature_stab\db_vlvm\db_metrics.h
+* jni\feature_stab\db_vlvm\db_rob_image_homography.cpp
+* jni\feature_stab\db_vlvm\db_rob_image_homography.h
+* jni\feature_stab\db_vlvm\db_robust.h
+* jni\feature_stab\db_vlvm\db_utilities.cpp
+* jni\feature_stab\db_vlvm\db_utilities.h
+* jni\feature_stab\db_vlvm\db_utilities_algebra.h
+* jni\feature_stab\db_vlvm\db_utilities_camera.cpp
+* jni\feature_stab\db_vlvm\db_utilities_camera.h
+* jni\feature_stab\db_vlvm\db_utilities_constants.h
+* jni\feature_stab\db_vlvm\db_utilities_geometry.h
+* jni\feature_stab\db_vlvm\db_utilities_indexing.cpp
+* jni\feature_stab\db_vlvm\db_utilities_indexing.h
+* jni\feature_stab\db_vlvm\db_utilities_linalg.cpp
+* jni\feature_stab\db_vlvm\db_utilities_linalg.h
+* jni\feature_stab\db_vlvm\db_utilities_poly.cpp
+* jni\feature_stab\db_vlvm\db_utilities_poly.h
+* jni\feature_stab\db_vlvm\db_utilities_random.h
+* jni\feature_stab\db_vlvm\db_utilities_rotation.h
+* jni\feature_stab\doc\
+* jni\feature_stab\doc\Readme.txt
+* jni\feature_stab\doc\dbreg_API_doxyfile
+* jni\feature_stab\src\
+* jni\feature_stab\src\dbreg\
+* jni\feature_stab\src\dbreg\dbreg.cpp
+* jni\feature_stab\src\dbreg\dbreg.h
+* jni\feature_stab\src\dbreg\dbstabsmooth.cpp
+* jni\feature_stab\src\dbreg\dbstabsmooth.h
+* jni\feature_stab\src\dbreg\targetver.h
+* jni\feature_stab\src\dbreg\vp_motionmodel.c
+* jni\feature_stab\src\dbreg\vp_motionmodel.h
+* jni\feature_stab\src\dbregtest\
+* jni\feature_stab\src\dbregtest\PgmImage.cpp
+* jni\feature_stab\src\dbregtest\PgmImage.h
+* jni\feature_stab\src\dbregtest\dbregtest.cpp
+* jni\feature_stab\src\dbregtest\stdafx.cpp
+* jni\feature_stab\src\dbregtest\stdafx.h
+* jni\feature_stab\src\dbregtest\targetver.h
+* jni\mosaic_renderer_jni.cpp
+* jni\mosaic_renderer_jni.h
+* proguard.flags
+* tests\
+* tests\Android.bp
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* tests\src\ => app\src\androidTest\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,192 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.android.camera"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml
+10
+11    <original-package android:name="com.android.camera" />
+11-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:8:5-59
+11-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:8:23-56
+12
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:10:5-65
+13-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:10:22-62
+14
+15    <uses-feature android:name="android.hardware.camera" />
+15-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:12:5-60
+15-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:12:19-57
+16    <uses-feature
+16-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:13:5-15:36
+17        android:name="android.hardware.camera.autofocus"
+17-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:14:9-57
+18        android:required="false" />
+18-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:15:9-33
+19
+20    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+20-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:17:5-71
+20-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:17:22-68
+21    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+21-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:18:5-79
+21-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:18:22-76
+22    <uses-permission android:name="android.permission.WAKE_LOCK" />
+22-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:19:5-68
+22-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:19:22-65
+23    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+23-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:20:5-72
+23-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:20:22-69
+24    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+24-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:21:5-81
+24-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:21:22-78
+25    <uses-permission android:name="android.permission.READ_SMS" />
+25-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:22:5-67
+25-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:22:22-64
+26
+27    <application
+27-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:24:5-92:19
+28        android:name="com.android.camera.CameraAppImpl"
+28-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:25:9-56
+29        android:debuggable="true"
+30        android:hardwareAccelerated="true"
+30-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:26:9-43
+31        android:icon="@mipmap/ic_launcher_camera"
+31-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:27:9-50
+32        android:label="@string/camera_label"
+32-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:28:9-45
+33        android:testOnly="true"
+34        android:theme="@style/ThemeCamera" >
+34-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:29:9-43
+35        <uses-library
+35-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:30:9-32:40
+36            android:name="com.google.android.media.effects"
+36-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:31:13-60
+37            android:required="false" />
+37-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:32:13-37
+38
+39        <receiver
+39-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:33:9-39:20
+40            android:name="com.android.camera.CameraButtonIntentReceiver"
+40-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:34:13-73
+41            android:exported="true" >
+41-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:35:13-36
+42            <intent-filter>
+42-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:36:13-38:29
+43                <action android:name="android.intent.action.CAMERA_BUTTON" />
+43-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:37:17-78
+43-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:37:25-75
+44            </intent-filter>
+45        </receiver>
+46
+47        <activity
+47-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:41:9-61:20
+48            android:name="com.android.camera.Camera"
+48-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:42:13-53
+49            android:clearTaskOnLaunch="true"
+49-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:43:13-45
+50            android:configChanges="orientation|screenSize|keyboardHidden"
+50-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:44:13-74
+51            android:exported="true"
+51-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:45:13-36
+52            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+52-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:46:13-70
+53
+54            <!--
+55                <intent-filter>
+56
+57                <action android:name="android.intent.action.MAIN" />
+58                <category android:name="android.intent.category.DEFAULT" />
+59                <category android:name="android.intent.category.LAUNCHER" />
+60            </intent-filter>
+61            -->
+62            <intent-filter>
+62-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:53:13-56:29
+63                <action android:name="android.media.action.IMAGE_CAPTURE" />
+63-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:54:17-77
+63-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:54:25-74
+64
+65                <category android:name="android.intent.category.DEFAULT" />
+65-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:55:17-76
+65-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:55:27-73
+66            </intent-filter>
+67            <intent-filter>
+67-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:57:13-60:29
+68                <action android:name="android.media.action.STILL_IMAGE_CAMERA" />
+68-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:58:17-82
+68-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:58:25-79
+69
+70                <category android:name="android.intent.category.DEFAULT" />
+70-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:55:17-76
+70-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:55:27-73
+71            </intent-filter>
+72        </activity>
+73        <activity
+73-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:62:9-80:20
+74            android:name="com.android.camera.VideoCamera"
+74-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:63:13-58
+75            android:clearTaskOnLaunch="true"
+75-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:64:13-45
+76            android:configChanges="orientation|screenSize|keyboardHidden"
+76-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:65:13-74
+77            android:exported="true"
+77-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:66:13-36
+78            android:icon="@mipmap/ic_launcher_video_camera"
+78-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:67:13-60
+79            android:label="@string/video_camera_label"
+79-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:68:13-55
+80            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+80-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:69:13-70
+81            <intent-filter>
+81-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:70:13-75:29
+82                <action android:name="android.intent.action.MAIN" />
+82-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:71:17-69
+82-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:71:25-66
+83                <action android:name="android.media.action.VIDEO_CAMERA" />
+83-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:72:17-76
+83-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:72:25-73
+84
+85                <category android:name="android.intent.category.DEFAULT" />
+85-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:55:17-76
+85-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:55:27-73
+86                <category android:name="android.intent.category.LAUNCHER" />
+86-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:74:17-77
+86-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:74:27-74
+87            </intent-filter>
+88            <intent-filter>
+88-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:76:13-79:29
+89                <action android:name="android.media.action.VIDEO_CAPTURE" />
+89-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:77:17-77
+89-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:77:25-74
+90
+91                <category android:name="android.intent.category.DEFAULT" />
+91-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:55:17-76
+91-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:55:27-73
+92            </intent-filter>
+93        </activity>
+94        <!--
+95             Suppose users enter panorama from launcher, turn off the screen,
+96             turn on the screen, and enter the camera from the lock screen.
+97             They can switch to panorama from there. Use singleTask so there
+98             will be only one panorama activity.
+99        -->
+100        <activity
+100-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:85:9-91:82
+101            android:name="com.android.camera.panorama.PanoramaActivity"
+101-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:86:13-72
+102            android:clearTaskOnLaunch="true"
+102-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:87:13-45
+103            android:configChanges="orientation|screenSize|keyboardHidden"
+103-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:88:13-74
+104            android:label="@string/pano_dialog_title"
+104-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:89:13-54
+105            android:launchMode="singleTask"
+105-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:90:13-44
+106            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+106-->D:\OAXIS\code\LegacyCamera\app\src\main\AndroidManifest.xml:91:13-70
+107    </application>
+108
+109</manifest>

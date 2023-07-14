@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<com.android.camera.ModePicker xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mode_picker"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:visibility="gone">
+    <!-- minHeight in camera_control.xml is used to avoid overlapping of current_mode. -->
+    <RelativeLayout
+        android:id="@+id/current_mode"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/mode_selection"
+        android:background="@drawable/bg_mode_picker"
+        android:contentDescription="@string/accessibility_mode_picker">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/empty">
+
+            <com.android.camera.ui.RotateImageView
+                android:id="@+id/mode_0"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/empty"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_switch_video_holo_light" />
+
+            <com.android.camera.ui.RotateImageView
+                android:id="@+id/mode_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/empty"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_switch_camera_holo_light" />
+
+            <com.android.camera.ui.RotateImageView
+                android:id="@+id/mode_2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/empty"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_switch_pan_holo_light" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mode_selection"
+        android:layout_width="198dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_switcher"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <com.android.camera.ui.RotateImageView
+                android:id="@+id/mode_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_pressed"
+                android:contentDescription="@string/switch_to_camera_label"
+                android:scaleType="center"
+                android:src="@drawable/ic_switch_camera_holo_light" />
+
+            <com.android.camera.ui.RotateImageView
+                android:id="@+id/mode_video"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_pressed"
+                android:contentDescription="@string/switch_to_video_label"
+                android:scaleType="center"
+                android:src="@drawable/ic_switch_video_holo_light" />
+
+            <com.android.camera.ui.RotateImageView
+                android:id="@+id/mode_panorama"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_pressed"
+                android:contentDescription="@string/switch_to_panorama_label"
+                android:scaleType="center"
+                android:src="@drawable/ic_switch_pan_holo_light" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/mode_selection_border" />
+    </RelativeLayout>
+</com.android.camera.ModePicker>
