@@ -449,7 +449,6 @@ public class VideoCamera extends ActivityBase
         }
 
         mRecordingTimeView = (TextView) findViewById(R.id.recording_time);
-        mRecordingTimeRect = (RotateLayout) findViewById(R.id.recording_time_rect);
         mOrientationListener = new MyOrientationEventListener(this);
         mTimeLapseLabel = findViewById(R.id.time_lapse_label);
         // The R.id.labels can only be found in phone layout. For tablet, the id is
@@ -594,7 +593,7 @@ public class VideoCamera extends ActivityBase
                 mLabelsLinearLayout.setOrientation(mLabelsLinearLayout.HORIZONTAL);
             }
         }
-        mRecordingTimeRect.setOrientation(mOrientationCompensation);
+
     }
 
     private void startPlayVideoActivity() {

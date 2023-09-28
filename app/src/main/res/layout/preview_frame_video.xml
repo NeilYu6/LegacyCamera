@@ -36,14 +36,6 @@
             android:background="@drawable/ic_snapshot_border"
             android:visibility="gone" />
 
-        <com.android.camera.ui.RotateLayout
-            android:id="@+id/recording_time_rect"
-            style="@style/ViewfinderLableLayout">
-
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </com.android.camera.ui.RotateLayout>
 
         <include
             android:id="@+id/labels"

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2010 The Android Open Source Project
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,19 +14,13 @@
      limitations under the License.
 -->
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/app_root"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:camera="http://schemas.android.com/apk/res/com.android.camera"
+        android:id="@+id/app_root"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <include layout="@layout/preview_frame" />
-
-    <include layout="@layout/camera_control" />
-
-
-
-
-
-
-</RelativeLayout>
+    <include layout="@layout/preview_frame"/>
+    <include layout="@layout/camera_control"/>
+</LinearLayout>

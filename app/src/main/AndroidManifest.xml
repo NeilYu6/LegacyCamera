@@ -44,12 +44,12 @@
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:exported="true"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
-       <!--     <intent-filter>
+            <intent-filter>
 
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
             <intent-filter>
                 <action android:name="android.media.action.IMAGE_CAPTURE" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -67,12 +67,12 @@
             android:icon="@mipmap/ic_launcher_video_camera"
             android:label="@string/video_camera_label"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
-            <intent-filter>
+   <!--         <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.media.action.VIDEO_CAMERA" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
             <intent-filter>
                 <action android:name="android.media.action.VIDEO_CAPTURE" />
                 <category android:name="android.intent.category.DEFAULT" />

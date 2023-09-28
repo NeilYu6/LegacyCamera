@@ -42,5 +42,18 @@
     </com.android.camera.PreviewFrameLayout>
 
     <include layout="@layout/indicator_bar" />
+
+
+    <com.android.camera.ShutterButton
+        android:id="@+id/shutter_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_shutter"
+        android:clickable="true"
+        android:contentDescription="@string/accessibility_shutter_button"
+        android:focusable="true"
+        android:scaleType="center" />
 </RelativeLayout>
 

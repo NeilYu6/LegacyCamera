@@ -19,8 +19,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/bg_camera_pattern"
-    android:visibility="gone"
-    android:minHeight="105dp">
+    android:minHeight="105dp"
+    android:visibility="gone">
 
     <include layout="@layout/review_thumbnail" />
 
